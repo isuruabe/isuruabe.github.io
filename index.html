@@ -1,50 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <img src="photo.webp" alt="Isuru Abeyratne" style="width:150px; border-radius:50%; margin-bottom:15px;">
-    <title>Isuru Abeyratne | Math PhD Student</title>
+    <title>Isuru Abeyratne | Mathematics</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
-        h1 { color: #003366; }
-        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .contact-info { background: #f9f9f9; padding: 15px; border-radius: 5px; }
+        /* General Reset */
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+        
+        /* The Black Navigation Bar */
+        nav {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between; /* Pushes name to left, links to right */
+            align-items: center;
+        }
+        
+        .nav-name { font-size: 1.5em; font-weight: bold; }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1em;
+        }
+        .nav-links a:hover { color: #ccc; }
+
+        /* Main Container for Side-by-Side Layout */
+        .container {
+            display: flex;
+            max-width: 1100px;
+            margin: 50px auto; /* Centers the whole block */
+            padding: 0 20px;
+            gap: 50px; /* Space between photo and text */
+        }
+
+        /* Left Column: Photo */
+        .photo-column {
+            flex: 0 0 350px; /* Fixed width for the photo area */
+        }
+        
+        .photo-column img {
+            width: 100%;
+            display: block;
+            border-radius: 4px; /* Slight rounding of corners like the example */
+        }
+
+        /* Right Column: Text */
+        .text-column {
+            flex: 1; /* Takes up remaining space */
+        }
+
+        .text-column h2 { margin-top: 0; }
+        
+        /* Links in the text */
+        .text-column a { color: #0066cc; text-decoration: none; }
+        .text-column a:hover { text-decoration: underline; }
+
+        /* Footer for email */
+        .footer-note {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        
+        /* Mobile adjustment: Stacks them on small screens */
+        @media (max-width: 768px) {
+            .container { flex-direction: column; }
+            .photo-column { flex: auto; max-width: 100%; }
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Isuru Abeyratne</h1>
-        <p><strong>PhD Student in Mathematics</strong><br>
-        University of Tennessee, Knoxville</p>
-    </header>
+    <nav>
+        <div class="nav-name">Isuru Abeyratne</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Research</a>
+            <a href="#">CV</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
 
-    <section class="contact-info">
-        <p>📧 Email: cattanay@tennessee.edu</p>
-        <p>📍 Office: WAB E202</p>
-    </section>
+    <div class="container">
+        
+        <div class="photo-column">
+            <img src="photo.webp" alt="Isuru Abeyratne">
+        </div>
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am a third-year PhD student in Mathematics at the University of Tennessee, Knoxville. 
-            My background is in Physics (experimental), and I hold an MS in Mathematics.
-        </p>
-        <p>
-            My current research interests lie in <strong>Geometric Analysis</strong> and <strong>Mathematical Physics</strong>. 
+        <div class="text-column">
+            <p><strong>I am a mathematics graduate student with interests in Geometric Analysis and Mathematical Physics.</strong></p>
             
-        </p>
-    </section>
+            <p>
+                Currently, I am a third-year PhD student in Mathematics at the University of Tennessee, Knoxville. 
+                Before this, I completed my MS in Mathematics here, and my undergraduate degree was in experimental Physics.
+            </p>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li><strong>PhD in Mathematics</strong> (In Progress) - University of Tennessee, Knoxville</li>
-            <li><strong>MS in Mathematics</strong> - University of Tennessee, Knoxville</li>
-            <li><strong>BS in Physics</strong></li>
-        </ul>
-    </section>
+            <p>
+                I am interested in the intersection of geometry and physics, specifically how geometric structures evolve.
+            </p>
+
+            <div class="footer-note">
+                Email address is cattanay@tennessee.edu
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
