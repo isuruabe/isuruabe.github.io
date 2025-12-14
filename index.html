@@ -3,6 +3,38 @@
 <head>
     <title>Isuru Abeyratne | Mathematics</title>
     <style>
+        /* General Reset & Body Setup */
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333;
+            /* IMPORTANT: Needed for the background image positioning */
+            position: relative; 
+            min-height: 100vh; 
+        }
+
+        /* THE TRANSPARENT BACKGROUND IMAGE */
+        body::before {
+            content: "";
+            /* Ensure the filename matches what you uploaded */
+            background-image: url('bg1.jpg'); 
+            background-size: cover; /* Ensures it covers the whole screen without stretching weirdly */
+            background-position: center;
+            background-repeat: no-repeat;
+ 
+            /* Position it behind everything */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Sends it to the back */
+ 
+            /* THE TRANSPARENCY LEVEL */
+            opacity: 0.1; /* 0.1 is very subtle. 0.9 is almost solid. */
+        }
         /* General Reset */
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
         
