@@ -3,22 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math 115 Schedule</title>
+    <title>Isuru Abeyratne - Teaching</title>
     <style>
-        body { 
-            margin: 0; 
-            padding: 0; 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            line-height: 1.6; 
-            color: #333;
-            /* IMPORTANT: Needed for the background image positioning */
-            position: relative; 
-            min-height: 100vh; 
+        /* RESET & BASIC STYLES */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: #f4f4f4; /* Light gray background for the page */
         }
+
+        /* HEADER STYLES (Black Bar) */
+        header {
+            background-color: #000000; /* Pure black background */
+            color: #ffffff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between; /* Pushes Name to left, Links to right */
+            align-items: center;
+        }
+
+        .brand-name {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 25px; /* Spacing between buttons */
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #cccccc; /* Light grey on hover */
+        }
+
+        /* MAIN CONTENT STYLES */
+        .main-content {
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto; /* Centers the content */
+            background-color: white; /* White paper look for content */
+            min-height: 80vh;
+        }
+
+        h1 {
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* TABLE STYLES (From previous request) */
         table {
             border-collapse: collapse;
             width: 100%;
-            max-width: 800px; /* Keeps it readable on large screens */
             margin-bottom: 1rem;
         }
         th {
@@ -43,104 +84,43 @@
 </head>
 <body>
 
-    <nav>
-        <div class="nav-name">Isuru Abeyratne</div>
-        <div class="nav-links">
+    <header>
+        <div class="brand-name">Isuru Abeyratne</div>
+        <nav>
             <a href="index.html">Home</a>
             <a href="teaching.html">Teaching</a>
             <a href="personal.html">Personal</a>
-            <a href="">Research</a>
-        </div>
-    </nav>
+            <a href="research.html">Research</a>
+        </nav>
+    </header>
 
-    <h1>Math 115: Spring 2026 Schedule</h1>
-
-    <table>
-      <thead>
-        <tr>
-          <th style="width: 150px;">Date</th>
-          <th>Class Topic (In-Class)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Wed 1/21</td>
-          <td>
-            (1) General Course Information<br>
-            (2) Lecture: Introduction to statistical terms
-          </td>
-        </tr>
-        <tr>
-          <td>Fri 1/23</td>
-          <td>
-            (1) Lecture: Summation notation, sample mean, variance, and standard deviation<br>
-            (2) Lecture: Interpreting sample mean, variance, and standard deviation
-          </td>
-        </tr>
-        <tr>
-          <td>Mon 1/26</td>
-          <td>
-            (1) Lecture: Quick review: sample mean, variance, std dev<br>
-            (2) Lecture: Discrete Populations (Hand calc & shortcuts)
-          </td>
-        </tr>
-        <tr>
-          <td>Wed 1/28</td>
-          <td>(1) Lecture: Percentiles, Quartiles, Distribution shapes</td>
-        </tr>
-        <tr>
-          <td>Fri 1/30</td>
-          <td>(1) Lecture: Summary and applications of transformations</td>
-        </tr>
-        <tr>
-          <td>Mon 2/2</td>
-          <td>(1) Practice: The Empirical Rule and Chebyshev's inequality practice</td>
-        </tr>
-        <tr>
-          <td>Wed 2/4</td>
-          <td>(1) Practice: Mega Deck Part 1 (Sample statistics, discrete populations, Chebyshev's inequality, and Empirical rule)</td>
-        </tr>
-        <tr>
-          <td>Fri 2/6</td>
-          <td>(1) Practice: Mega Deck Part 2 (Probability, proportion, percentage)</td>
-        </tr>
-        <tr>
-          <td>Mon 2/9</td>
-          <td>(1) Practice: Dice Data collection and sample statistics</td>
-        </tr>
-        <tr>
-          <td>Wed 2/11</td>
-          <td>(1) Lecture: Introduction to sampling distributions</td>
-        </tr>
-        <tr>
-          <td>Fri 2/13</td>
-          <td>(1) Lecture: Introduction to sampling distributions (cont.)</td>
-        </tr>
-        <tr>
-          <td>Mon 2/16</td>
-          <td>
-            (1) Lecture: Sampling distribution conclusion<br>
-            (2) Practice: Sampling distribution parameter calculation problems
-          </td>
-        </tr>
-        <tr>
-          <td>Wed 2/18</td>
-          <td>(1) Lecture: Introduction to Continuous Distributions</td>
-        </tr>
-        <tr>
-          <td>Fri 2/20</td>
-          <td>(1) Lecture: Continuous distributions example problems (Probability & Percentiles focus)</td>
-        </tr>
-        <tr>
-          <td>Mon 2/23</td>
-          <td>(1) Exam 1 Prep / Review</td>
-        </tr>
-        <tr>
-          <td>Wed 2/25</td>
-          <td><strong>EXAM 1</strong></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="main-content">
+        <h1>Teaching</h1>
+        <h2>Math 115: Statistical Reasoning - Spring 2026</h2>
+        
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 150px;">Date</th>
+              <th>Class Topic (In-Class)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wed 1/21</td>
+              <td>(1) General Course Information<br>(2) Lecture: Introduction to statistical terms</td>
+            </tr>
+            <tr>
+              <td>Fri 1/23</td>
+              <td>(1) Lecture: Summation notation, sample mean, variance, and standard deviation<br>(2) Lecture: Interpreting sample mean, variance, and standard deviation</td>
+            </tr>
+            <tr>
+              <td>Wed 2/25</td>
+              <td><strong>EXAM 1</strong></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
 
 </body>
 </html>
