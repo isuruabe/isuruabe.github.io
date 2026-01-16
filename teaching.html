@@ -1,78 +1,125 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Teaching | Isuru Abeyratne</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isuru Abeyratne - Teaching</title>
     <style>
-        /* General Reset & Body Setup */
-        body { 
-            margin: 0; 
-            padding: 0; 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            line-height: 1.6; 
-            color: #333;
-            /* IMPORTANT: Needed for the background image positioning */
-            position: relative; 
-            min-height: 100vh; 
+        /* RESET & BASIC STYLES */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: #f4f4f4; /* Light gray background for the page */
         }
 
-        /* THE TRANSPARENT BACKGROUND IMAGE */
-        body::before {
-            content: "";
-            /* Ensure the filename matches what you uploaded */
-            background-image: url('bg5.jpg'); 
-            background-size: 100% auto; /* Ensures it covers the whole screen without stretching weirdly */
-            background-position: center;
-            background-repeat: no-repeat;
- 
-            /* Position it behind everything */
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1; /* Sends it to the back */
- 
-            /* THE TRANSPARENCY LEVEL */
-            opacity: 0.2; /* 0.1 is very subtle. 0.9 is almost solid. */
+        /* HEADER STYLES (Black Bar) */
+        header {
+            background-color: #000000; /* Pure black background */
+            color: #ffffff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between; /* Pushes Name to left, Links to right */
+            align-items: center;
         }
-        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
-        nav { background-color: #000; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
-        .nav-name { font-size: 1.5em; font-weight: bold; }
-        .nav-links a { color: #fff; text-decoration: none; margin-left: 20px; }
-        .nav-links a:hover { color: #ccc; }
-        .container { max-width: 800px; margin: 50px auto; padding: 0 20px; }
-        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .course-item { margin-bottom: 20px; }
-        .course-date { color: #666; font-size: 0.9em; }
+
+        .brand-name {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 25px; /* Spacing between buttons */
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #cccccc; /* Light grey on hover */
+        }
+
+        /* MAIN CONTENT STYLES */
+        .main-content {
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto; /* Centers the content */
+            background-color: white; /* White paper look for content */
+            min-height: 80vh;
+        }
+
+        h1 {
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* TABLE STYLES (From previous request) */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        th {
+            background-color: #f6f8fa;
+            font-weight: 600;
+            text-align: left;
+            padding: 10px 13px;
+            border: 1px solid #dfe2e5;
+        }
+        td {
+            padding: 10px 13px;
+            border: 1px solid #dfe2e5;
+            vertical-align: top;
+        }
+        tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        tr:hover {
+            background-color: #f1f8ff;
+        }
     </style>
 </head>
 <body>
 
-    <nav>
-        <div class="nav-name">Isuru Abeyratne</div>
-        <div class="nav-links">
+    <header>
+        <div class="brand-name">Isuru Abeyratne</div>
+        <nav>
             <a href="index.html">Home</a>
             <a href="teaching.html">Teaching</a>
             <a href="personal.html">Personal</a>
-            <a href="">Research</a>
-        </div>
-    </nav>
+            <a href="research.html">Research</a>
+        </nav>
+    </header>
 
-    <div class="container">
+    <div class="main-content">
         <h1>Teaching</h1>
+        <h2>Math 115: Statistical Reasoning - Spring 2026</h2>
         
-        <div class="course-item">
-            <h2>Current Courses</h2>
-            <p><a href="math115sp26.html">Math 115: Statistical Reasoning - Fall 2026 </a></p>
-        </div>
-
-        <div class"course-item">
-            <h2>Past Teaching</h2>
-            <p>Math 113: Mathematical Reasoning - Fall 2025</p>
-            <p>Math 125: Basic Calculus - Spring 2025</p>
-            <p>Math 125: Basic Calculus - Fall 2024</p>
-            <p>Math 123: Finite Mathematics - Spring 2024</p>
-            <p>Math 119: College Algebra - Fall 2023</p>
-        </div>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 150px;">Date</th>
+              <th>Class Topic (In-Class)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wed 1/21</td>
+              <td>(1) General Course Information<br>(2) Lecture: Introduction to statistical terms</td>
+            </tr>
+            <tr>
+              <td>Fri 1/23</td>
+              <td>(1) Lecture: Summation notation, sample mean, variance, and standard deviation<br>(2) Lecture: Interpreting sample mean, variance, and standard deviation</td>
+            </tr>
+            <tr>
+              <td>Wed 2/25</td>
+              <td><strong>EXAM 1</strong></td>
+            </tr>
+          </tbody>
+        </table>
     </div>
 
 </body>
