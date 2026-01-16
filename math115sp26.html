@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isuru Abeyratne - Teaching</title>
+    <title>Math 115: Statistical Reasoning - Spring 2026</title>
     <style>
         /* RESET & BASIC STYLES */
-        body {
+        body, html {
             margin: 0;
             padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            background-color: #f4f4f4; /* Light gray background for the page */
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: #f9f9f9; /* Clean background, no image */
+            color: #333;
         }
 
-        /* HEADER STYLES (Black Bar) */
+        /* HEADER STYLES (Matches Teaching Page) */
         header {
-            background-color: #000000; /* Pure black background */
+            background-color: #000000;
             color: #ffffff;
-            padding: 20px 40px;
+            padding: 25px 50px;
             display: flex;
-            justify-content: space-between; /* Pushes Name to left, Links to right */
+            justify-content: space-between;
             align-items: center;
         }
 
@@ -32,53 +33,78 @@
         nav a {
             color: #ffffff;
             text-decoration: none;
-            margin-left: 25px; /* Spacing between buttons */
+            margin-left: 30px;
             font-size: 18px;
-            transition: color 0.3s ease;
+            font-weight: normal;
         }
 
         nav a:hover {
-            color: #cccccc; /* Light grey on hover */
+            text-decoration: underline;
         }
 
-        /* MAIN CONTENT STYLES */
-        .main-content {
-            padding: 40px;
-            max-width: 900px;
-            margin: 0 auto; /* Centers the content */
-            background-color: white; /* White paper look for content */
+        /* MAIN CONTENT CONTAINER */
+        .page-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
             min-height: 80vh;
         }
 
         h1 {
-            border-bottom: 2px solid #eaeaea;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #222;
         }
 
-        /* TABLE STYLES (From previous request) */
+        h2 {
+            font-size: 20px;
+            font-weight: normal;
+            color: #666;
+            margin-bottom: 40px;
+            margin-top: 0;
+        }
+
+        /* TABLE STYLES */
         table {
-            border-collapse: collapse;
             width: 100%;
-            margin-bottom: 1rem;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Subtle shadow for "paper" effect */
         }
+
         th {
-            background-color: #f6f8fa;
-            font-weight: 600;
+            background-color: #f4f4f4;
+            color: #333;
+            font-weight: bold;
             text-align: left;
-            padding: 10px 13px;
-            border: 1px solid #dfe2e5;
+            padding: 15px;
+            border-bottom: 2px solid #ddd;
         }
+
         td {
-            padding: 10px 13px;
-            border: 1px solid #dfe2e5;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
             vertical-align: top;
+            line-height: 1.5;
         }
-        tr:nth-child(2n) {
-            background-color: #f6f8fa;
-        }
+
         tr:hover {
-            background-color: #f1f8ff;
+            background-color: #fafafa;
+        }
+
+        /* SPECIFIC COLUMN WIDTHS */
+        .col-date { width: 12%; font-weight: bold; }
+        .col-topic { width: 35%; }
+        .col-prep { width: 25%; }
+        .col-due { width: 28%; }
+
+        /* LINK STYLES INSIDE TABLE */
+        a {
+            color: #663399;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -94,31 +120,144 @@
         </nav>
     </header>
 
-    <div class="main-content">
-        <h1>Teaching</h1>
-        <h2>Math 115: Statistical Reasoning - Spring 2026</h2>
-        
+    <div class="page-container">
+        <h1>Math 115: Statistical Reasoning</h1>
+        <h2>Spring 2026 Course Schedule</h2>
+
         <table>
-          <thead>
-            <tr>
-              <th style="width: 150px;">Date</th>
-              <th>Class Topic (In-Class)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Wed 1/21</td>
-              <td>(1) General Course Information<br>(2) Lecture: Introduction to statistical terms</td>
-            </tr>
-            <tr>
-              <td>Fri 1/23</td>
-              <td>(1) Lecture: Summation notation, sample mean, variance, and standard deviation<br>(2) Lecture: Interpreting sample mean, variance, and standard deviation</td>
-            </tr>
-            <tr>
-              <td>Wed 2/25</td>
-              <td><strong>EXAM 1</strong></td>
-            </tr>
-          </tbody>
+            <thead>
+                <tr>
+                    <th class="col-date">Date</th>
+                    <th class="col-topic">Class Topic (In-Class)</th>
+                    <th class="col-prep">Pre-Class Prep (Videos & Reading)</th>
+                    <th class="col-due">Assignments Due (By 11:59 PM)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wed 1/21</td>
+                    <td>
+                        (1) General Course Information<br>
+                        (2) Lecture: Introduction to statistical terms
+                    </td>
+                    <td>
+                        <strong>Read:</strong> Syllabus<br>
+                        <strong>Register:</strong> MyStatLab via Canvas
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Fri 1/23</td>
+                    <td>
+                        (1) Lecture: Summation notation, sample mean, variance, and standard deviation<br>
+                        (2) Lecture: Interpreting sample mean, variance, and standard deviation
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mon 1/26</td>
+                    <td>
+                        (1) Lecture: Quick review: sample mean, variance, std dev<br>
+                        (2) Lecture: Discrete Populations (Hand calc & shortcuts)
+                    </td>
+                    <td>
+                        <strong>Watch:</strong> How to use the 1-Varstat function on the TI calculator (9:02)<br>
+                        <strong>Watch:</strong> Discrete Populations Mean, Variance and Standard Deviation (25:54)
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Wed 1/28</td>
+                    <td>(1) Lecture: Percentiles, Quartiles, Distribution shapes</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Fri 1/30</td>
+                    <td>(1) Lecture: Summary and applications of transformations</td>
+                    <td></td>
+                    <td><strong>Due:</strong> HW #1 Samples and discrete populations (MSL)</td>
+                </tr>
+                <tr>
+                    <td>Mon 2/2</td>
+                    <td>(1) Practice: The Empirical Rule and Chebyshev's inequality practice</td>
+                    <td>
+                        <strong>Watch:</strong> Chebyshev's inequality (11:44)<br>
+                        <strong>Watch:</strong> Empirical rule (6:16)
+                    </td>
+                    <td><strong>Due:</strong> Written HW #1 Sample Statistics and Discrete Populations (Submit on Paper)</td>
+                </tr>
+                <tr>
+                    <td>Wed 2/4</td>
+                    <td>(1) Practice: Mega Deck Part 1 (Sample statistics, discrete populations, Chebyshev's inequality, and Empirical rule)</td>
+                    <td><strong>Watch:</strong> Probability notation and terms, equally likely outcomes, Conditional probability (22:02)</td>
+                    <td><strong>Due:</strong> HW #2 Transformations (MSL)</td>
+                </tr>
+                <tr>
+                    <td>Fri 2/6</td>
+                    <td>(1) Practice: Mega Deck Part 2 (Probability, proportion, percentage)</td>
+                    <td>
+                        <strong>Watch:</strong> Independence, "And" problems, and the multiplication rule (23:47)<br>
+                        <strong>Watch:</strong> "Or" problems and the addition rule (11:04)
+                    </td>
+                    <td><strong>Due:</strong> HW #3 Chebyshev's inequality and the Empirical rule (MSL)</td>
+                </tr>
+                <tr>
+                    <td>Mon 2/9</td>
+                    <td>(1) Practice: Dice Data collection and sample statistics</td>
+                    <td></td>
+                    <td><strong>Due:</strong> Written HW #2 Transformations, Chebyshev's inequality and the Empirical rule (Submit on Paper)</td>
+                </tr>
+                <tr>
+                    <td>Wed 2/11</td>
+                    <td>(1) Lecture: Introduction to sampling distributions</td>
+                    <td></td>
+                    <td><strong>Due:</strong> HW #4 Probability (MSL)</td>
+                </tr>
+                <tr>
+                    <td>Fri 2/13</td>
+                    <td>(1) Lecture: Introduction to sampling distributions (cont.)</td>
+                    <td></td>
+                    <td><strong>Due:</strong> Written HW #3 Probability (Submit on Paper)</td>
+                </tr>
+                <tr>
+                    <td>Mon 2/16</td>
+                    <td>
+                        (1) Lecture: Sampling distribution conclusion<br>
+                        (2) Practice: Sampling distribution parameter calculation problems
+                    </td>
+                    <td><strong>Watch:</strong> Sampling distribution parameters (20:37)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Wed 2/18</td>
+                    <td>(1) Lecture: Introduction to Continuous Distributions</td>
+                    <td></td>
+                    <td><strong>Due:</strong> HW #5 Computing parameters of sampling distributions of statistics (MSL)</td>
+                </tr>
+                <tr>
+                    <td>Fri 2/20</td>
+                    <td>(1) Lecture: Continuous distributions example problems (Probability & Percentiles focus)</td>
+                    <td></td>
+                    <td><strong>Due:</strong> HW #6 Continuous probabilities (MSL)</td>
+                </tr>
+                <tr>
+                    <td>Mon 2/23</td>
+                    <td>(1) Exam 1 Prep / Review</td>
+                    <td></td>
+                    <td>
+                        <strong>Due:</strong> HW #7 Continuous percentiles (MSL)<br>
+                        <strong>Due:</strong> Written HW #4 Continuous Distributions (Submit on Paper)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wed 2/25</td>
+                    <td><strong>EXAM 1</strong></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
         </table>
     </div>
 
